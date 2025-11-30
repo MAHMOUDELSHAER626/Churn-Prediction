@@ -32,12 +32,12 @@ This project analyzes customer data to predict whether customers will churn (lea
 - Grid search cross-validation for hyperparameter tuning
 - Multiple evaluation metrics (Accuracy, Precision, Recall, AUC-ROC)
 - Feature importance analysis
-- Interactive Gradio web interface for predictions
+- Interactive Streamlit web interface for predictions
 
 ## Installation
 
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn xgboost gradio
+pip install numpy pandas matplotlib seaborn scikit-learn xgboost streamlit
 ```
 
 ## Usage
@@ -57,23 +57,21 @@ This will:
 ### Running the Web Interface
 
 ```bash
-python main.py
+python APP.py
 ```
 
-The Gradio interface will launch automatically in your browser at `http://localhost:7860`
+The Streamlit interface will launch automatically 
 
 ### Making Predictions
 
-The Gradio interface provides two tabs:
+The Streamlit interface provides two tabs:
 
 **1. Single Customer Prediction:**
 - Fill in customer information using interactive dropdowns and sliders
 - Click "Predict Churn" to get instant results
 - View churn probability and prediction status
 
-**2. Batch Prediction:**
-- Upload a CSV file with multiple customers
-- Download predictions with probabilities for all customers
+
 
 ## Key Insights
 
@@ -124,5 +122,5 @@ The Gradient Boosting model achieved:
 - Seaborn
 - Scikit-learn
 - XGBoost
-- Gradio
+- Streamlit
 
